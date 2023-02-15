@@ -1,0 +1,18 @@
+server:
+  port: 9312
+
+spring:
+  application:
+    name: Benefit-Issuance-Service
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: SYS as SYSDBA
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true    
+    properties:      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+
